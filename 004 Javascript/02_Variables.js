@@ -111,5 +111,44 @@ console.log(nombre5 + " " +apellido);
 
 console.log(nombre5 + " " +edad2);
 
+//Booleans. Pueden tomar valores de TRUE o FALSE
+var numero7 = 10;
+let numero8 = 15;
+let numero9 = 10;
+
+//Operador de comparación menor que...
+console.log(numero7<numero8);
+
+//Operador de comparación mayor o igual que...
+console.log(numero7>=numero9);
+
+//Operador de comparación igual que...OJO, VA CON DOBLE ==
+console.log(numero7==numero9);
+
+//Operador de comparación estrictamente igual que...OJO, VA CON triple ===
+let numero10 = 34;
+let numero11 = "34";
+console.log(numero10===numero11);
+
+//Operador diferente que...
+let numero12 = 34;
+let numero13 = "34";
+console.log(numero12 != numero13);
+
+console.log(typeof(numero13));
+
+//Operaciones con null
+let sueldo3;
+let sueldo = null;
+var sueldo2 = sueldo + 1000; //null
+
+
+
+
+
+
+
+
+
 
 
