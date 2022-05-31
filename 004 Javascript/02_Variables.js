@@ -3,6 +3,8 @@
 // Declaración de variables:
 // No puede empezar por un número
 // Esto de error:    var 2_cliente;
+// Evitar tildes y Ñ
+
 //Variable correctamente declarada
 let _numero;
 
@@ -78,4 +80,36 @@ console.log("El resultado de sumar " + sumando1 + " + "
 
 
 //Declarión de strings
-let
+//------------------------
+//------------------------
+let nombre = "Mi nombre es Angel";
+let nombre2 = 'Mi nombre es Angel';
+
+/* Aunque declaremos números, si lo hacemos entre comillas,
+nos lo tratará como strings */
+let edad2 = "43";
+console.log(edad2+20);
+
+//Las comillas anidadas siempre alternas,
+let nombre3 = 'Mi nombre es "Angel" ';
+let nombre4 = "Mi nombre es 'Angel' ";
+
+/* Cuando declaremos numeros con los que no vamos a operar
+matemáticamente lo haremos como strings */
+let telefono = "666666666";
+
+//Los strings no se suman, se concatenan:
+let nombre5 = "Angel";
+let espacio = " ";
+let apellido = "García";
+let nombreCompleto = nombre+espacio+apellido;
+
+console.log(nombreCompleto);
+
+//Otra forma de hacerlo
+console.log(nombre5 + " " +apellido);
+
+console.log(nombre5 + " " +edad2);
+
+
+
