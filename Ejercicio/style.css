@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
+
+body {
+  background: linear-gradient(to bottom, #612a00 0%, #ff9a1f 100%) no-repeat;
+}
+
+.Container {
+  width: 940px;
+  height: 415px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.imageContainer {
+  float: left;
+  width: 620px;
+}
+
+.textContainer {
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 64px;
+  color: #411000;
+}
+
+p,li {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  color: #984d26;
+}
+
+li:hover{
+  color: red;
+}
