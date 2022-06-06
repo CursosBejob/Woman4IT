@@ -142,6 +142,9 @@ let sueldo3;
 let sueldo = null;
 var sueldo2 = sueldo + 1000; //null
 
+//IMPORTANTE. La precedencia es la misma que en matemáticas
+let resultado3 = 4 + 5 * 6 / 3; //(4 + ((5*6)/3))
+
 
 
 
