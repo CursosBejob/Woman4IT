@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        var alumno = {
+            nombre: "Angel",
+            edad: 47,
+            sexo: "Varón",
+
+            //Sintaxis de un GET
+            get muestraDatos(){
+                return "Nombre:" +this.nombre + ". Edad:" + this.edad;
+            }
+
+        }
+
+        console.log(alumno.muestraDatos); //No hace falta poner () en los Getters
+
+
+    </script>
+    
+</body>
+</html>

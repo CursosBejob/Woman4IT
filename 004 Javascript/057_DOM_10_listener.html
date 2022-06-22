@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones con eventos</title>
+
+
+</head>
+
+<body id="body">
+
+<form>
+    <input type="button" id="boton" value="Pulsar">
+</form>
+
+<div id="contenedor"></div>
+
+<script>
+    var num1 = 5;
+    var num2 = 10;
+
+    document.getElementById("boton").addEventListener("click", function(){
+        multiplica(num1, num2)
+    });
+
+    function multiplica(a, b){
+        document.getElementById("contenedor").innerHTML = a * b;
+    }
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>POO Creación de un objeto propio</title>
+
+</head>
+
+<body>
+	<script>
+		//Creo mi objeto de tipo persona. Creando una instancia de persona.
+		var persona1 = new Object();
+
+		persona1.nombre = 'Angel';
+		persona1['edad'] = 38; //Sería como poner: 	persona1.edad = 38;
+
+		persona1.saludar = function () {
+			alert('Mi nombre es  ' + this.nombre + '.');
+		};
+
+		persona1.saludar();
+
+		/*Otra sintaxis posible de POO:
+
+		var persona1 = {
+			nombre = "Angel",
+			edad = 38,
+
+			saludar: function () {
+			alert('Mi nombre es  ' + this.nombre + '.');
+		}		
+		}
+
+		
+		persona1.saludar();
+*/
+
+
+		/*SIn POO
+		var nombre = "Angel";
+		var edad = 38;
+
+		function saludar() {
+			alert('Mi nombre es  ' + nombre + '.');
+		}
+
+		saludar();
+		
+		var galleta = new Object();
+
+		*/
+
+		
+
+
+	</script>
+
+</body>
+
+</html>

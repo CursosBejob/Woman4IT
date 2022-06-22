@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones con eventos</title>
+
+
+</head>
+
+<body id="body">
+
+<form>
+    <input type="button" id="boton" value="Pulsar">
+</form>
+
+<script>
+    var boton = document.getElementById("boton");
+
+    boton.addEventListener("click", funcion1);
+    boton.addEventListener("click", funcion2);
+
+    function funcion1(){
+        alert("Esto es de la funcion1");
+    }
+
+    function funcion2(){
+        alert("Esto es de la funcion2");
+    }
+</script>
+</body>
+
+</html>

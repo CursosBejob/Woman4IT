@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones con eventos</title>
+
+
+</head>
+
+<body id="body">
+
+    <form>
+        <input type="button" id="boton" value="Pulsar">
+    </form>
+
+    <div id="contenedor"></div>
+
+    <script>
+        document.getElementById("boton").addEventListener("click", muestraFecha);
+
+        function muestraFecha() {
+            document.getElementById("contenedor").innerHTML = Date();
+        }
+    </script>
+
+</body>
+
+</html>

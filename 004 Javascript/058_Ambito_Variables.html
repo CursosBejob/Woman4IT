@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones con eventos</title>
+
+
+</head>
+
+<body id="body">
+
+
+    <script>
+        //Declarión de una variable global
+
+        var variable1 = "Esta es una variable global";
+        let variable7 = "Esta es una variable global";
+
+        function miFuncion() {
+            
+        }
+
+        miFuncion();
+
+
+        //Declaración de un avariable local
+
+        function miFuncion2() {
+            let variable3 = "Esta es una variable local";
+            var variable2 = "Esta es una variable local";
+            
+            console.log(variable2);
+        }
+
+        function miFuncion3() {
+            variable2 = "Esta es una variable local";
+            
+            console.log(variable2);
+        }
+
+        miFuncion2();
+
+        console.log(variable1);
+      
+       
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones con eventos</title>
+
+
+</head>
+
+<body id="body">
+
+    <form>
+        <input type="button" id="miBoton" value="Pulsar">
+    </form>
+
+    <div id="demo" style="background-color: red;"></div>
+
+    <script>
+        document.getElementById("miBoton").addEventListener("click", muestraAlerta);
+
+        function muestraAlerta() {
+            document.getElementById("demo").innerHTML = "Contenido añadido";
+        }
+    </script>
+
+
+</body>
+
+</html>

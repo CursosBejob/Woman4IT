@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Sintaxis 
+        var alumno = {
+            nombre: "Angel",
+            edad: 47,
+            sexo: "Varón"
+
+        }
+
+        //Sintaxis alternativa
+
+        var alumno = new Object();
+        alumno.nombre = "Angel";
+        alumno.edad = 47;
+    
+        //Podemos imprimir todo nuestro objeto
+        console.log(alumno);
+
+         //Otra forma de imprimir todo nuestro objeto
+         var objetoArray = Object.values(alumno);
+         console.log(objetoArray);
+
+        //Acceder a una propiedad de nuestro objeto
+        console.log(alumno.nombre);
+
+        //Otra forma de acceder a una propiedad de nuestro objeto
+        console.log(alumno["nombre"]);
+
+        //Podemos recorrer las propiedades de nuestro objeto con un for...in
+        for (nombrePropiedad in alumno) {
+            if (nombrePropiedad == "nombr") {
+                console.log("Se ha encontrado la propiedad " + nombrePropiedad + " y vale " + alumno.nombre);
+                break;
+            }else{
+                console.log("No se ha encontrado la propiedad nombr. Se ha encontrado: " + nombrePropiedad);
+            }
+        }
+
+        //Podemos modificar un atributo ya instanciado
+        alumno.nombre = "Manolo";
+        console.log(alumno.nombre);
+
+         //Podemos eliminar un atributo.
+         delete alumno.nombre;
+         console.log(alumno.nombre);
+
+    </script>
+    
+</body>
+</html>

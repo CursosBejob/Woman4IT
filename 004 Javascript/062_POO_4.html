@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>POO Creación de un objeto propio</title>
+
+</head>
+
+<body>
+	<script>
+		class Galleta {
+			
+			constructor(sabor){
+				this.sabor = sabor;
+			}
+
+			sabor() {
+				return `Galleta de ` + this.sabor;
+			}
+
+		}
+
+
+		let galleta1 = new Galleta("Vainilla");
+		let galleta2 = new Galleta("Chocolate");
+		let galleta3 = new Galleta("Coco");
+
+		console.log(galleta1.sabor);
+		console.log(galleta2.sabor);
+		console.log(galleta3.sabor);
+	</script>
+
+</body>
+
+</html>

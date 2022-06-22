@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones con eventos</title>
+
+
+</head>
+
+<body id="body">
+
+<form>
+    <input type="button" id="boton" value="Pulsar">
+</form>
+
+<div id="contenedor"></div>
+
+<script>
+    var boton = document.getElementById("boton");
+
+    boton.addEventListener("mouseover", funcion1);
+    boton.addEventListener("mouseout", funcion2);
+    boton.addEventListener("click", funcion3);
+
+    function funcion1(){
+        document.getElementById("contenedor").innerHTML += "Función1 ejecutada con un mouseOver <br>";
+    }
+
+    function funcion2(){
+        document.getElementById("contenedor").innerHTML += "Función2 ejecutada con un mouseOut <br>";
+    }
+    
+    function funcion3(){
+        document.getElementById("contenedor").innerHTML += "Función3 ejecutada con un Click <br>";
+    }
+    
+</script>
+
+
+
+</body>
+
+</html>
